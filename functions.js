@@ -57,7 +57,10 @@ console.log(subtract(8,2));
  * @param {number} y
  * @return {number} the product
  */
-
+function multiply(x,y){
+	return x * y;
+}
+console.log(multiply(6,5));
 
 /**
  * Divides the first number by the second.
