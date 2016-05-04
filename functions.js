@@ -13,6 +13,10 @@ console.log(numberToString(5));
  * @param {number} n
  * @return {number}
  */
+ function increase(n){
+ 	return n+=1;
+ }
+ console.log(increase(1));
 
 
 /**
