@@ -93,6 +93,9 @@ console.log(square(2));
  * @param {number} y
  * @return {number} the result
  */
+function calculate(operation,x,y){
+
+}
 
 
 /**
@@ -101,6 +104,16 @@ console.log(square(2));
  * @param {number} b
  * @return {boolean} `a` is larger than `b`
  */
+ function isGreaterThan(x,y){
+ 	if (x>y){
+ 		return true;
+ 	}
+ 	else {
+ 		return false;
+ 	}
+ }
+ isGreaterThan(10,2);
+
 
 
 /**
