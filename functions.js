@@ -35,7 +35,10 @@ console.log(decrease(5));
  * @param {number} y
  * @return {number} the sum
  */
-
+function add(x,y){
+	return x + y;
+}
+console.log(add(10,3));
 
 /**
  * Subtracts the second number from the first.
