@@ -170,6 +170,11 @@ function calculate(operation,x,y){
  * @param {number} y
  * @return {number} the largest number
  */
+ function maximum(x,y){
+ 	var max = Math.max(x,y);
+ 	return max;
+ }
+ maximum(100,10);
 
 
 /**
