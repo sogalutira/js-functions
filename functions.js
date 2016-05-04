@@ -182,6 +182,15 @@ function calculate(operation,x,y){
  * @param {number} n
  * @return {boolean} the number is even
  */
+ function isEven(n){
+ 	if (n % 2 === 0){
+ 		return true;
+ 	}
+ 	else {
+ 		return false;
+ 	}
+ }
+ isEven(8);
 
 
 /**
@@ -189,7 +198,15 @@ function calculate(operation,x,y){
  * @param {number} n
  * @return {boolean} the number is odd
  */
-
+function isOdd(n){
+	if (n % 2 !==0){
+		return true;
+	}
+	else {
+		return false;
+	}
+}
+isOdd(3);
 
 /**
  * Returns a letter grade.
