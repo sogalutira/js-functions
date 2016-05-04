@@ -157,6 +157,11 @@ function calculate(operation,x,y){
  * @param {number} y
  * @return {number} the smallest number
  */
+ function minimum(x,y){
+ 	var min = Math.min(x,y);
+ 	return min;
+ }
+ minimum(4,2);
 
 
 /**
