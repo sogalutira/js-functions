@@ -4,8 +4,9 @@
  * @return {string} the number as a string
  */
 function numberToString(n){
-	
+	return '' + n;
 }
+console.log(numberToString(5));
 
 /**
  * Adds one to a given number.
