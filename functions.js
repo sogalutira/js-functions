@@ -46,7 +46,10 @@ console.log(add(10,3));
  * @param {number} y
  * @return {number} the difference
  */
-
+ function subtract(x,y){
+ 	return x - y;
+ }
+console.log(subtract(8,2));
 
 /**
  * Multiplies two numbers.
