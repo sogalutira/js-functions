@@ -122,6 +122,15 @@ function calculate(operation,x,y){
  * @param {number} b
  * @return {boolean} `a` is smaller than `b`
  */
+ function isLessThan(x,y){
+ 	if (x<y){
+ 		return true;
+ 	}
+ 	else{
+ 		return false;
+ 	}
+ }
+ isLessThan(5,10);
 
 
 /**
