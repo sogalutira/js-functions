@@ -24,7 +24,10 @@ console.log(numberToString(5));
  * @param {number} n
  * @return {number}
  */
-
+ function decrease(n){
+ 	return n-=1;
+ }
+console.log(decrease(5));
 
 /**
  * Adds two numbers.
