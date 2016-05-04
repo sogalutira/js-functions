@@ -68,6 +68,10 @@ console.log(multiply(6,5));
  * @param {number} y
  * @return {number} the quotient
  */
+ function divide(x,y){
+ 	return x / y;
+ }
+ console.log(divide(9,3));
 
 
 /**
