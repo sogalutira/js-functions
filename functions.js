@@ -139,6 +139,16 @@ function calculate(operation,x,y){
  * @param {number} b
  * @return {boolean} the numbers are equal
  */
+ function areEqual(x,y){
+ 	if (x===y){
+ 		return true;
+ 	}
+ 	else {
+ 		return false;
+ 	}
+ }
+ areEqual(2,2);
+ areEqual("tacocat",3);
 
 
 /**
