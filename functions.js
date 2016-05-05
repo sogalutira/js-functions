@@ -93,9 +93,28 @@ console.log(square(2));
  * @param {number} y
  * @return {number} the result
  */
-function calculate(operation,x,y){
+ function calculate(operation, x, y){
+ 	var sum = (x+y);
+ 	var difference = (x-y);
+ 	var product = (x*y);
+ 	var quotient = (x/y);
+ 	if (operation === add){
+ 		return (x + " + " + y + " = " + sum);}
+ 	else if(operation === subtract){
+ 		return (x + " - " + y + " = " + difference);
+ 	}
+ 	else if(operation === multiply){
+ 		return (x + " x " + y + " = " + product);
+ 	}
+ 	else if(operation === divide){
+ 		return (x + " / " + y + " = " + quotient);
+ 	}
+ }
+ console.log(calculate(add,4,7));
+ console.log(calculate(subtract,7,4));
+ console.log(calculate(multiply, 3,3));
+ console.log(calculate(divide, 10,5));
 
-}
 
 
 /**
@@ -219,7 +238,23 @@ isOdd(3);
  * @param {number} total maximum possible score
  * @return {string} the score represented as a letter grade
  */
-
+function letterGrade(score, total){
+	if (score >= 90 && score <= 100){
+    return "A";
+  }else if (score >=80 && score <= 89){
+    return "B";
+  }
+  else if (score >= 70 && score <=79){
+    return "C";
+  }
+  else if (score >= 60 && score <=69){
+    return "D";
+  }
+  else if (score >= 0 && score <= 59){
+    return "F";
+  }
+}
+console.log(letterGrade(80, 85));
 
 /**
  * Checks if a `restaurant` object has a `reviews` property.
@@ -228,6 +263,17 @@ isOdd(3);
  * @param {object} restaurant   represents a restaurant object
  * @return {object} restaurant
  */
+ var restaurant = {
+    reviews: ""
+  };
+ function incrementReviews(object){
+  if(restaurant.hasOwnProperty('reviews')){
+    return restaurant.reviews +=1;
+  }else{
+    return restaurant.reviews === 1;
+  }
+ }
+ console.log(incrementReviews(restaurant.reviews));
 
 
 /**
@@ -236,7 +282,11 @@ isOdd(3);
  * @param {string} word2
  * @return {string} joined the words joined with a space
  */
-
+function combine (word1, word2){
+  var together = word1 + " " + word2;
+  return together;
+}
+combine(tact, cat);
 
 /**
  * Returns a circle object with the properties `circumference` and `area`.
@@ -245,4 +295,14 @@ isOdd(3);
  * @param {number} radius
  * @return {object} circle
  */
+ function createCircle(radius){
+  var circumference = 2 * Math.PI * radius;
+  var area = radius * radius * Math.PI;
+  var circle = {
+    circumference: circumference,
+    area: area
+  };
+  return circle;
+ }
+ createCircle();
 
